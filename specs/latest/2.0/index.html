@@ -944,7 +944,7 @@ interface mixin <dfn data-dfn-type="interface" id="WebGL2RenderingContextOverloa
                                     optional unsigned long long srcOffset = 0,
                                     optional GLuint srcLengthOverride = 0);
 
-  undefined texElementImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,
+  undefined texElementSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,
                               (Element or ElementImage) element,
                               optional WebGLCopyElementImageConfig config = {}); // May throw DOMException
 
@@ -2225,7 +2225,7 @@ WebGL2RenderingContext includes WebGL2RenderingContextOverloads;
       </dd>
 
       <dt class="idl-code">
-        [throws] undefined texElementImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,
+        [throws] undefined texElementSubImage2D(GLenum target, GLint level, GLint xoffset, GLint yoffset,
                               (Element or ElementImage) element,
                               optional WebGLCopyElementImageConfig config = {});
       </dt>
